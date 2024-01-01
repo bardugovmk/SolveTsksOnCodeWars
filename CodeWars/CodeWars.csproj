@@ -46,12 +46,18 @@
     <Compile Include="2023\10 - October\01\IsValidWalk.cs" />
     <Compile Include="2023\10 - October\02\AlphabetPosition.cs" />
     <Compile Include="2023\10 - October\02\Find.cs" />
+    <Compile Include="2023\10 - October\04\IsPrime.cs" />
+    <Compile Include="2023\10 - October\04\LongestConsec.cs" />
+    <Compile Include="2023\10 - October\04\validBraces.cs" />
+    <Compile Include="2024\01 - January\01\TimeFormat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="2023\10 - October\05\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

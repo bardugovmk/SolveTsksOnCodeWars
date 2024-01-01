@@ -21,24 +21,39 @@ namespace CodeWars._2023._10___October._01
 {
     internal class Kata
     {
+        //public static bool IsValidWalk(string[] walk)
+        //{
+        //    int xAxis = 0;
+        //    int yAxis = 0;
+
+        //    if (walk.Length == 10)
+        //    {
+        //        for (int i = 0; i < walk.Length; i++)
+        //        {
+        //            if (walk[i] == "n") xAxis++;
+        //            if (walk[i] == "s") xAxis--;
+        //            if (walk[i] == "e") yAxis++;
+        //            if (walk[i] == "w") yAxis--;
+        //        }
+        //        if (xAxis == 0 && yAxis == 0) return true;
+        //        else return false;
+        //    }
+        //    else return false;
+        //}
         public static bool IsValidWalk(string[] walk)
         {
-            int xAxis = 0;
-            int yAxis = 0;
-
-            if(walk.Length==10)
+            // Проверяем, что количество шагов равно 10 (минутам)
+            if (walk.Length != 10)
             {
-                for (int i = 0; i < walk.Length; i++)
-                {
-                    if (walk[i] == "n") xAxis += 1;
-                    if (walk[i] == "s") xAxis -= 1;
-                    if (walk[i] == "e") yAxis += 1;
-                    if (walk[i] == "w") yAxis -= 1;
-                }
-                if (xAxis == 0 && yAxis == 0) return true;
-                else return false;
+                return false;
             }
-            else return false;
+
+            // Подсчитываем количество шагов по каждому направлению
+            int vertical = walk.Count(c => c == "n") - walk.Count(c => c == "s");
+            int horizontal = walk.Count(c => c == "n") - walk.Count(c => c == "s");
+
+            // Проверяем, вернемся ли мы в исходную точку после 10 минут
+            return vertical == 0 && horizontal == 0;
         }
     }
 }

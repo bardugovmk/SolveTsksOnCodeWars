@@ -50,6 +50,7 @@
     <Compile Include="2023\10 - October\04\LongestConsec.cs" />
     <Compile Include="2023\10 - October\04\validBraces.cs" />
     <Compile Include="2024\01 - January\01\TimeFormat.cs" />
+    <Compile Include="2024\01 - January\02\AreYouPlayingBanjo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

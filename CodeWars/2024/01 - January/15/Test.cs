@@ -12,6 +12,7 @@ namespace CodeWars._2024._01___January._15
         public void Write()
         {
             Console.WriteLine(1);
+            Console.WriteLine(1);
         }
     }
 }
